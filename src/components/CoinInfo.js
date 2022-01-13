@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { HistoricalChart } from "../config/api";
 import { Line } from "react-chartjs-2";
 import {
-  CircularProgress,
+  LinearProgress,
   createTheme,
   makeStyles,
   ThemeProvider,
@@ -45,8 +45,7 @@ const useStyles = makeStyles((theme) => ({
 return (
     <div className={classes.container}>
         {!historicData ? (
-            <CircularProgress style={{color:"gold"}}
-            size={250} thickness={1}/>
+            <LinearProgress color={"Black"}/>
         ):(
             <>
             <Line
