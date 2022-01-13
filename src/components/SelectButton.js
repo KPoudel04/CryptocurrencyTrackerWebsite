@@ -4,13 +4,16 @@ import React from 'react'
 const SelectButton = ({ children, selected, onClick }) => {
     const useStyles = makeStyles({
       selectbutton: {
+        display:"flex",
         borderStyle: "solid",
         borderWidth: "4px",
         borderImage: "linear-gradient(45deg, #74d680, #ff7878) 1",
-        padding: 10,
+        justifyContent:"Center",
+        // padding: 10,
         marginBottom:20,
-        paddingLeft: 20,
-        paddingRight: 20,
+        // paddingLeft: 20,
+        // paddingRight: 20,
+        allignItems: "center",
         fontFamily: "Montserrat",
         cursor: "pointer",
         backgroundColor: selected ? "Black" : "",
@@ -21,7 +24,7 @@ const SelectButton = ({ children, selected, onClick }) => {
           color: "White",
         },
         width: "22%",
-        //   margin: 5,
+        margin: 5,
       },
     });
   
